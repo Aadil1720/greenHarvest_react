@@ -1,0 +1,87 @@
+
+.navigation {
+  position: absolute;
+  top: 65%; /* Vertically center */
+  left: 0;
+  width: 100%; /* Stretch to full width */
+  display: flex;
+  justify-content: space-between; /* Keep buttons at edges */
+  z-index: 10; /* Ensure they are above content */
+  pointer-events: none; /* Prevent navigation from blocking content */
+}
+
+.navigation button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  pointer-events: all; /* Allow interaction with buttons */
+}
+
+.navigation button:first-of-type {
+  margin-left: 1rem;
+}
+
+.navigation button:last-of-type {
+  margin-right: 1rem;
+}
+
+/* Dots for pagination */
+.dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: #333;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .review{
+    padding:2rem;
+  }
+  .navigation {
+      top: 55%; /* Lower the buttons slightly */
+  }
+
+  .navigation button {
+      padding: 0.4rem 0.8rem; /* Reduce button size */
+      font-size: 0.9rem; /* Adjust font size */
+  }
+}
+
+@media (max-width: 480px) {
+ 
+  .navigation {
+      top: 50%; /* Lower the buttons further for smaller screens */
+  }
+
+  .navigation button {
+      padding: 0.3rem 0.6rem; /* Further reduce button size */
+      font-size: 0.8rem; /* Adjust font size */
+  }
+
+  .dots {
+      margin-top: 0.5rem; /* Reduce spacing */
+  }
+
+  .dot {
+      height: 8px; /* Reduce dot size */
+      width: 8px;
+  }
+}
