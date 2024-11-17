@@ -1074,6 +1074,7 @@ transition: .2s linear;
 .footer .box-container .box .links .i
 {
 	color: var(--green);
+	padding:2px;
 	padding-right: .5rem;
 }
 .footer .box-container .box .links:hover .i
