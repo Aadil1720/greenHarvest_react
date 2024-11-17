@@ -1282,55 +1282,50 @@ transition: .2s linear;
 
 /* Home */
 /* For tablets and smaller screens */
-@media (max-width: 1024px) {
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
 	.home {
-		padding-top: 20rem;
-		padding-bottom: 5rem;
+		padding-top: 10rem;
+		padding-bottom: 3rem;
+		background-size: contain; /* Ensure the background adjusts well */
 	}
 
 	.home .content {
-		width: 90%; /* Reduce content width */
-		padding-bottom: 3rem;
+		width: 90%;
 	}
 
 	.home .content h1 {
-		font-size: 4rem; /* Smaller font for headings */
+		font-size: 3.5rem; /* Smaller font size */
 	}
 
 	.home .content h3 {
-		font-size: 2rem; /* Adjust heading size */
+		font-size: 2rem;
 	}
 
 	.home .content p {
-		font-size: 1.5rem; /* Slightly smaller text */
-		line-height: 1.6;
+		font-size: 1.4rem;
 	}
 }
 
-/* For mobile screens */
-@media (max-width: 768px) {
+@media screen and (max-width: 480px) {
 	.home {
-		padding-top: 15rem;
-		padding-bottom: 4rem;
-	}
-
-	.home .content {
-		width: 100%; /* Full width for mobile */
-		padding: 2rem;
+		padding-top: 8rem;
+		padding-bottom: 2rem;
 	}
 
 	.home .content h1 {
-		font-size: 3rem; /* Adjust for readability */
+		font-size: 2.8rem;
 	}
 
 	.home .content h3 {
-		font-size: 1.8rem; /* Smaller headings for smaller screens */
+		font-size: 1.8rem;
 	}
 
 	.home .content p {
-		font-size: 1.2rem; /* Reduced paragraph font size */
-		line-height: 1.5;
+		font-size: 1.2rem;
+		line-height: 1.4;
 	}
+
 }
 
 @media (max-width: 768px) {
