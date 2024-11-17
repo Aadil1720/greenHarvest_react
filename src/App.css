@@ -1286,8 +1286,6 @@ transition: .2s linear;
 	.home {
 		padding-top: 20rem;
 		padding-bottom: 5rem;
-		background-size: contain; /* Adjusts background size for tablets */
-		background-position: center top;
 	}
 
 	.home .content {
@@ -1314,8 +1312,6 @@ transition: .2s linear;
 	.home {
 		padding-top: 15rem;
 		padding-bottom: 4rem;
-		background-size: cover; /* Maintain background scaling for mobile */
-		background-position: center top;
 	}
 
 	.home .content {
