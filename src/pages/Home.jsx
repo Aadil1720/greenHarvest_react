@@ -1,5 +1,5 @@
 import React from 'react'
-
+import {Link} from 'react-router-dom'
 const Home = () => {
   return (
 
@@ -8,7 +8,7 @@ const Home = () => {
 		<h1>Green Harvest</h1>
 		<h3>Fresh And <span> Organic </span> Products For You</h3>
 		<p>Nourishing lives with fresh, organic, and wholesome fruits and vegetables, for a healthier,happier you!</p>
-		<a href="#" className="btn"> shop now</a>
+		<Link to='/product'><button className='btn'> Shop Now</button></Link>
 	</div>
 </section>
 
